@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .navbar-logo {
+    width: 15%;
+
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 5px 0;
+  }
+
+
+
+
