@@ -1,0 +1,17 @@
+img{
+    width: 500px;
+}
+
+.scrolling{
+    animation: scaleUp 3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

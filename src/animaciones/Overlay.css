@@ -1,24 +1,28 @@
 .overlay-container {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fb4566;
+    background: #5B0395;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 1000;
+   transition: opacity 0.5s ease-in-out;
   }
   
   .overlay-container.active {
     opacity: 1;
+    z-index: 0;
+    position: absolute;
+
   }
-  
+  .overlay-container.none{
+    display: none;
+  }
   .overlay-transition {
-    transform: translateY(100%);
+    transform: translateY(-100%);
     transition: transform 0.5s ease-in-out;
   }
   

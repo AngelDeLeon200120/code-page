@@ -7,11 +7,11 @@ const Overlay = () => {
 
   useEffect(() => {
     setIsActive(true);
-    setTimeout(() => setIsActive(false), 2000); // Oculta la superposición después de 2 segundos
+    setTimeout(() => setIsActive(false), 1200); // Oculta la superposición después de 2 segundos
   }, []);
 
   return (
-    <div className={`overlay-container ${isActive ? 'active' : ''}`}>
+    <div className={`overlay-container ${isActive ? 'active' : 'none'}`}>
       <div className="overlay-transition">
         {<Counter/>}
       </div>

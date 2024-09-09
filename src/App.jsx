@@ -1,20 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Overlay from './animaciones/Overlay'
-import Navbar from './Navbar'
+import { useState } from "react";
+import "./App.css";
+import Overlay from "./animaciones/Overlay";
+import Navbar from "./estructura_pagina/Navbar";
+import Main from "./estructura_pagina/Main";
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-  <div className='contenedor'>
-      <Overlay/>
-      <Navbar/>
-      hola
+    <div className="contenedor">
+      <Navbar />
+      <Main />
+      <Overlay />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -7,7 +7,7 @@ const Counter = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCount((prevCount) => (prevCount < 100 ? prevCount + 1 : 100));
-    }, 20); // Incrementa cada 20ms
+    }, 10); // Incrementa cada 20ms
 
     return () => clearInterval(interval); // Limpia el intervalo al desmontar
   }, []);
