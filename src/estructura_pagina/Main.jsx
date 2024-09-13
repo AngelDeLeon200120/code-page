@@ -28,13 +28,7 @@ const Main = () => {
             hidden: { opacity: 0, y: 50 },
           }}
           transition={{ duration: 0.5 }}
-          style={{
-            height: "800px",
-            margin: " 0",
-            padding: "20px",
-            background: "#f0f",
-            borderRadius: "8px",
-          }}
+          
         >
           <div className="scrolling-contenedor">
             <div className="scrolling-contenedor_texto">
@@ -43,18 +37,23 @@ const Main = () => {
                 <span>are we</span>
               </div>
               <p>
-                Somos un equipo de inadaptados a la insutria tecnológica y
-                digital, nuestra constante búsqueda por lo diferente, innovador,
-                por lo exclusivo nos ha llevado a trabajar con grandes marcas no
-                sólo de Guatemala sino del continente, generando un portafolio
-                con marcas reconocidas a nivel mundial.
+                Somos un equipo que se destaca por desafiar las normas de la
+                industria tecnológica y digital. Nuestra constante búsqueda de
+                lo diferente, lo innovador y lo exclusivo nos ha permitido
+                colaborar con grandes marcas no solo de Guatemala, sino de todo
+                el continente. Esta trayectoria nos ha llevado a construir un
+                portafolio con marcas reconocidas a nivel mundial.
               </p>
             </div>
             <div className="scrolling-contenedor_img">
-              <img
-                src="https://code.com.gt/wp-content/uploads/2024/04/LION-2-codeai_side_view_of_a_a_3d_model_of_a_cyborg_male_lion_face_lay_0ac2dfa6-35dd-48b1-b442-f4185be119d0-scaled.jpg"
-                alt="CODE-01"
-              />
+              <div className="profile-card">
+                <div className="profile-image">
+                  <img
+                    src="https://code.com.gt/wp-content/uploads/2024/04/LION-2-codeai_side_view_of_a_a_3d_model_of_a_cyborg_male_lion_face_lay_0ac2dfa6-35dd-48b1-b442-f4185be119d0-scaled.jpg" // Reemplaza con la URL de la imagen
+                    alt="Profile"
+                  />
+                </div>
+              </div>
             </div>
             <div className="scrolling-contenedor_boton">
               <button>Solicitar Cotizacion</button>

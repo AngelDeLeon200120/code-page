@@ -25,7 +25,7 @@ function App() {
     <div className="contenedor">
       <Navbar />
       <Main />
-      <Overlay />
+      {/* <Overlay /> */}
     </div>
   );
 }
