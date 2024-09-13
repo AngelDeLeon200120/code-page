@@ -1,22 +1,26 @@
 .navbar {
+  position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 50px;
   background-color: #333;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   width: 100%;
+  z-index: 100;
 }
 
 .navbar-logo {
-  width: 10%;
+ 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
 }
-
+.navbar-logo img{
+  width: 30%;
+}
 .menu {
   display: flex;
   justify-content: center;
@@ -25,11 +29,16 @@
 }
 
 
+.menu li{
+  list-style: none;
+}
 
 .menu a {
   position: relative;
   display: block;
   overflow: hidden;
+  text-decoration: none;
+font-size: 1.2rem;
 }
 
 .menu a span {

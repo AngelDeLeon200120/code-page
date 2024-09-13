@@ -1,6 +1,6 @@
 import React from "react";
 import "./estilos/Navbar.css";
-import { header } from "framer-motion/client";
+
 
 const Navbar = () => {
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
           />
         </div>
 
-        <ul class="menu">
+        <ul className="menu">
           <li>
             <a href="#0">
               <span>Who</span>

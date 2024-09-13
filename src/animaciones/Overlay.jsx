@@ -4,14 +4,23 @@ import Counter from './Counter';
 
 const Overlay = () => {
   const [isActive, setIsActive] = useState(false);
-
+  const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
+  
+
+    // Simula una carga (puedes reemplazarlo por una carga real)
+    setTimeout(() => {
+      setIsLoaded(true);
+      // Vuelve el scroll al inicio y lo habilita una vez que se carga
+      window.scrollTo(0, 0);
+      
+    }, 100);
     setIsActive(true);
-    setTimeout(() => setIsActive(false), 1200); // Oculta la superposición después de 2 segundos
+    setTimeout(() => setIsActive(false), 2000); // Oculta la superposición después de 2 segundos
   }, []);
 
   return (
-    <div className={`overlay-container ${isActive ? 'active' : 'none'}`}>
+    <div className={`overlay-container ${isActive ? 'active' : ''}`}>
       <div className="overlay-transition">
         {<Counter/>}
       </div>

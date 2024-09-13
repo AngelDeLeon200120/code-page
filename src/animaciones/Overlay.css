@@ -3,23 +3,23 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: #5B0395;
+  min-height: 100vh;
+    background: #3d0363;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-   transition: opacity 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out;
   }
   
   .overlay-container.active {
     opacity: 1;
-    z-index: 0;
+    z-index: 1000;
     position: absolute;
 
   }
   .overlay-container.none{
-    display: none;
+ display: none;
   }
   .overlay-transition {
     transform: translateY(-100%);

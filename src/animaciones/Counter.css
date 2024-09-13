@@ -1,14 +1,20 @@
 .counter {
-    font-size: 5rem;
+    font-size: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     animation: fadeIn 1s ease-in-out;
     color: #FFF;
+    gap: 30px;
   }
-  
+  .counter .code_img{
+    display: block;
+    width:450px;
+  }
   .count {
+    font-size: 4rem;
     animation: scaleUp 0.3s ease-in-out;
   }
   
