@@ -83,7 +83,10 @@ font-size: 1.1  rem;
 .menu_movil{
   display: none;
 }
-
+.bars{
+  display: none;
+  
+ }
 
 @media (max-width:800px) {
   .menu{
@@ -113,20 +116,23 @@ font-size: 1.1  rem;
     color: #fff;
   }
  .bars{
+  display: block;
   font-size: 2rem;
+  color: #fff;
  }
  .close{
   position: absolute;
   font-size: 2rem;
   top: 50px;
-  right: 100px;
+  right: 75px;
+  color: #fff;
  }
 }
 
 
 @media (min-width:320px) and (max-width:500px){
   .menu_movil{
-   height: 100vh;
+   height: 100%;
   }
 .navbar-logo :nth-child(2){
 display: none;

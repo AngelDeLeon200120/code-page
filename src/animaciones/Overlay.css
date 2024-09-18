@@ -1,5 +1,5 @@
 .overlay-container {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -19,7 +19,8 @@
 
   }
   .overlay-container.none{
- display: none;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
   }
   .overlay-transition {
     transform: translateY(-100%);

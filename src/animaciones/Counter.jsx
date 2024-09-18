@@ -22,7 +22,7 @@ const Counter = () => {
             src="https://code.com.gt/wp-content/uploads/2024/04/logo-blanco-01-2.svg"
             alt="CODE-01"
           />
-      {/* <span className="count">{count}</span> */}
+      <span className="count">{count}</span>
     </div>
   );
 };

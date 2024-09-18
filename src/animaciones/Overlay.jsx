@@ -20,7 +20,7 @@ const Overlay = () => {
   }, []);
 
   return (
-    <div className={`overlay-container ${isActive ? 'active' : ''}`}>
+    <div className={`overlay-container ${isActive ? 'active' : 'none'}`}>
       <div className="overlay-transition">
         {<Counter/>}
       </div>
