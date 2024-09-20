@@ -47,16 +47,16 @@ const Main = () => {
             </div>
             <div className="scrolling-contenedor_img">
               <div className="profile-card">
-                <div className="profile-image">
+                
                   <img
                     src="https://code.com.gt/wp-content/uploads/2024/04/LION-2-codeai_side_view_of_a_a_3d_model_of_a_cyborg_male_lion_face_lay_0ac2dfa6-35dd-48b1-b442-f4185be119d0-scaled.jpg" // Reemplaza con la URL de la imagen
                     alt="Profile"
                   />
-                </div>
+               
               </div>
             </div>
             <div className="scrolling-contenedor_boton">
-              <button>Solicitar Cotizacion</button>
+              <button className="boton">Solicitar Cotizacion</button>
             </div>
           </div>
         </motion.div>

@@ -5,6 +5,7 @@ import Counter from './Counter';
 const Overlay = () => {
   const [isActive, setIsActive] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  let overlay =document.querySelector("overlay-container")
   useEffect(() => {
   
 

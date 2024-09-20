@@ -51,7 +51,6 @@ const Navbar = () => {
     <header>
       <nav className="navbar" style={{
       position: 'fixed',
-      top: 0,
       width: '100%',
       transition: 'top 0.3s',
       top: showNavbar ? '0' : '-70px', // Ajustar el valor según la altura del navbar
