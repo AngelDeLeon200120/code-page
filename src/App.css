@@ -3,12 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-family: Arial, sans-serif;
-}
 
 #root{
   width: 100%;

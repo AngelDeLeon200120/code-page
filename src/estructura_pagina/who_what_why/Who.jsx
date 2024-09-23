@@ -7,9 +7,9 @@ const Who = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.2});
+  const [ref, inView] = useInView({ threshold: 0.2 });
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (inView) {
       controls.start("visible");
     } else {
@@ -80,13 +80,10 @@ const Who = () => {
         </motion.div>
       </section>
       <section>
-
-          <div className="scroll-container">
-            <div
-              className={`text-container ${isVisible ? "visible" : "hidden"}`}
-            >
-              <div className="text-container_texto">
-                <div className="container_texto-uno">
+        <div className="scroll-container">
+          <div className={`text-container ${isVisible ? "visible" : "hidden"}`}>
+            <div className="text-container_texto">
+              <div className="container_texto-uno">
                 <h2>We are</h2>
                 <span>Social First</span>
                 <p>
@@ -97,26 +94,23 @@ const Who = () => {
                   canales de redes sociales, maximizando así el compromiso y la
                   interacción con la audiencia.
                 </p>
-                </div>
-                <div className="container_texto-dos">
-                    <p>PRINCIPIOS</p>
-                <ul>    
-                    <li>Comprensión profunda de las redes sociales.</li>
-                    <li>Somos Tiktok first</li>
-                    <li>Contenido altamente relevante y atractivo.</li>
-                    <li>Interacción activa y participativa.</li>
-                    <li>Personalización y segmentación.</li>
-                    <li>Anuncios que no parecen anuncios.</li>
-                    <li>Asosiación cinérgica del branding y del performance.</li>
-                </ul>
-                </div>
               </div>
-              <div className="text-container_img">
-                <img src="https://code.com.gt/wp-content/uploads/2024/04/anonymous_a_3d_model_of_a_cyborg_ant_laying_upright_on_a_flat_s_3859f4bb-9545-4e60-abc8-56acfba10e3b.png" alt="" />
+              <div className="container_texto-dos">
+                <p style={{marginLeft:"-35px"}}>PRINCIPIOS</p>
+                <ul>
+                  <li>Comprensión profunda de las redes sociales.</li>
+                  <li>Somos Tiktok first</li>
+                  <li>Contenido altamente relevante y atractivo.</li>
+                  <li>Interacción activa y participativa.</li>
+                  <li>Personalización y segmentación.</li>
+                  <li>Anuncios que no parecen anuncios.</li>
+                  <li>Asosiación cinérgica del branding y del performance.</li>
+                </ul>
               </div>
             </div>
+            <div className="text-container_img"></div>
           </div>
-    
+        </div>
       </section>
     </>
   );

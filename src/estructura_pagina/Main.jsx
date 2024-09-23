@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+
 import "./estilos/Main.css";
 
 import Who from "./who_what_why/Who";
