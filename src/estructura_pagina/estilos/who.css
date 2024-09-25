@@ -241,11 +241,11 @@ background-attachment: fixed;
   }
 }
 
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
   .scrolling .scrolling-contenedor {
     margin-top: 50px;
   }
-}
+} */
 @media (max-width: 800px) {
   .scrolling
     .scrolling-contenedor
