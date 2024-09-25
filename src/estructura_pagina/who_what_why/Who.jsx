@@ -50,6 +50,8 @@ const Who = () => {
           }}
           transition={{ duration: 0.5 }}
         >
+     
+          <div className="overlay"></div>
           <div className="scrolling-contenedor">
             <div className="scrolling-contenedor_texto">
               <div className="scrolling-contenedor_texto-titulo">
@@ -65,14 +67,14 @@ const Who = () => {
                 portafolio con marcas reconocidas a nivel mundial.
               </p>
             </div>
-            <div className="scrolling-contenedor_img">
+            {/* <div className="scrolling-contenedor_img">
               <div className="profile-card">
                 <img
                   src="https://code.com.gt/wp-content/uploads/2024/04/LION-2-codeai_side_view_of_a_a_3d_model_of_a_cyborg_male_lion_face_lay_0ac2dfa6-35dd-48b1-b442-f4185be119d0-scaled.jpg" // Reemplaza con la URL de la imagen
                   alt="Profile"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="scrolling-contenedor_boton">
               <button className="boton">Solicitar Cotizacion</button>
             </div>
@@ -96,7 +98,7 @@ const Who = () => {
                 </p>
               </div>
               <div className="container_texto-dos">
-                <p style={{marginLeft:"-35px"}}>PRINCIPIOS</p>
+                <p style={{ marginLeft: "-35px" }}>PRINCIPIOS</p>
                 <ul>
                   <li>Comprensión profunda de las redes sociales.</li>
                   <li>Somos Tiktok first</li>
