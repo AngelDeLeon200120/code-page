@@ -2,12 +2,15 @@ import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../estilos/who.css";
+import equipoIMG from "../../img/equipo.jpg";
 
 const Who = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const [Ver, setIVER] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2 });
+
 
   useEffect(() => {
     if (inView) {
@@ -17,18 +20,25 @@ const Who = () => {
     }
     const handleScroll = () => {
       // Si el usuario hace scroll hacia abajo, mostrar el texto
-      if (window.scrollY > lastScrollY) {
+      if (window.scrollY >= 500) {
         setIsVisible(true);
+      
       } else {
         // Si el usuario hace scroll hacia arriba, esconder el texto
         setIsVisible(false);
+       
       }
+      window.scrollY >= 1300 ? setIVER(true) : setIVER(false);
+   
       // Actualizar la última posición del scroll
       setLastScrollY(window.scrollY);
     };
 
     // Agregar el event listener para el scroll
     window.addEventListener("scroll", handleScroll);
+
+    console.log(window.scrollY);
+    
 
     return () => {
       // Limpiar el event listener cuando el componente se desmonta
@@ -50,7 +60,6 @@ const Who = () => {
           }}
           transition={{ duration: 0.5 }}
         >
-     
           <div className="overlay"></div>
           <div className="scrolling-contenedor">
             <div className="scrolling-contenedor_texto">
@@ -81,6 +90,7 @@ const Who = () => {
           </div>
         </motion.div>
       </section>
+
       <section>
         <div className="scroll-container">
           <div className={`text-container ${isVisible ? "visible" : "hidden"}`}>
@@ -97,20 +107,44 @@ const Who = () => {
                   interacción con la audiencia.
                 </p>
               </div>
-              <div className="container_texto-dos">
-                <p style={{ marginLeft: "-35px" }}>PRINCIPIOS</p>
-                <ul>
-                  <li>Comprensión profunda de las redes sociales.</li>
-                  <li>Somos Tiktok first</li>
-                  <li>Contenido altamente relevante y atractivo.</li>
-                  <li>Interacción activa y participativa.</li>
-                  <li>Personalización y segmentación.</li>
-                  <li>Anuncios que no parecen anuncios.</li>
-                  <li>Asosiación cinérgica del branding y del performance.</li>
-                </ul>
-              </div>
             </div>
-            <div className="text-container_img"></div>
+            <div className="container_texto-dos">
+              <p style={{ marginLeft: "-35px" }}>PRINCIPIOS</p>
+              <ul>
+                <li>Comprensión profunda de las redes sociales.</li>
+                <li>Somos Tiktok first</li>
+                <li>Contenido altamente relevante y atractivo.</li>
+                <li>Interacción activa y participativa.</li>
+                <li>Personalización y segmentación.</li>
+                <li>Anuncios que no parecen anuncios.</li>
+                <li>Asosiación cinérgica del branding y del performance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+
+        <div className={`contenedor_equipo ${Ver ? "visibleVER" : "hiddenVER"}`}>
+         <div className="contenedor_equipo-titulo-texto">
+         <div className="contenedor_equipo-titulo">
+            <h3>Our team</h3>
+          </div>
+          <div className="contenedor_equipo-texto">
+            <p>
+              Somos un equipo curioso, inquieto y autodidacta, que
+              constantemente busca innovar en cada una de nuestras áreas. Nos
+              impulsa la pasión por el aprendizaje, la exploración y el
+              descubrimiento de soluciones únicas que destacan en el mercado.
+            </p>
+            <p>
+            Nos entusiasma hacer brillar a nuestros aliados, brindándoles el
+            acompañamiento de un equipo comprometido con el éxito de su marca.
+            </p>
+          </div>
+         </div>
+          <div className="contenedor_equipo-img">
+            <img src={equipoIMG} alt="" />
           </div>
         </div>
       </section>
