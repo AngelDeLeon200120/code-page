@@ -9,6 +9,7 @@ import  { useState, useEffect } from 'react';
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+
     // Función que maneja el scroll
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
@@ -34,9 +35,7 @@ const Navbar = () => {
   function BARS() {
 
     let menu_movil =document.querySelector('.menu_movil')
-    menu_movil.style.right = "0";
-
-    
+    menu_movil.style.right = "0"; 
   }
 
   function CLOSE() {
@@ -54,10 +53,10 @@ const Navbar = () => {
       width: '100%',
       transition: 'top 0.3s',
       top: showNavbar ? '0' : '-70px', // Ajustar el valor según la altura del navbar
-      backgroundColor: 'transparent', // Puedes ajustar el color o el estilo del navbar
+      backgroundColor: window.scrollY == 0 ? 'transparent' : 'rgba(0, 0, 0,0.9)' , // Puedes ajustar el color o el estilo del navbar
       color: 'white',
       padding: '10px',
-      textAlign: 'center'
+      textAlign: 'center',
     }}>
         <div className="navbar-logo">
           <img

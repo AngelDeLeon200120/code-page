@@ -37,3 +37,9 @@
     }
   }
   
+  @media (max-width: 600px){
+    .counter .code_img{
+      display: block;
+      width:325px;
+    }
+  }
